@@ -25,6 +25,13 @@ public class OrtagonalParallelepiped {
             }
         }
         System.out.println("Ваши данные: длина = " + a + ", ширина = " + b + ", высота = " + h);
+        System.out.println("Площадь поверххности = "+getS()+"\nОбъем = "+getV());
+    }
+    private static double getV(){
+        return a*b*h;
+    }
+    private static double getS(){
+        return 2*a*b+2*a*h+2*b*h;
     }
 
 }
