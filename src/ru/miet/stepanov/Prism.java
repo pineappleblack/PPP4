@@ -3,7 +3,7 @@ package ru.miet.stepanov;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class Prizma {
+public class Prizm {
     public static void go() {
         System.out.println("Введите сторону и высоту a, b");
         Scanner in = new Scanner(System.in);
