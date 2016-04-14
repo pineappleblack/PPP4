@@ -1,4 +1,4 @@
-﻿package ru.miet.stepanov;
+package ru.miet.stepanov;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
@@ -25,7 +25,7 @@ public class OrtagonalParallelepiped {
             }
         }
         System.out.println("Ваши данные: длина = " + a + ", ширина = " + b + ", высота = " + h);
-        System.out.println("Площадь поверххности = "+getS()+"\nОбъем = "+getV());
+        System.out.println("Площадь поверххности = "+getS()+"\nОбъем = "+getV()+"\n");
     }
     private static double getV(){
         return a*b*h;

@@ -1,4 +1,4 @@
-﻿package ru.miet.stepanov;
+package ru.miet.stepanov;
 
 import java.util.Scanner;
 
