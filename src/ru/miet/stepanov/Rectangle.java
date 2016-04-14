@@ -8,12 +8,18 @@ public class Rectangle {
         System.out.println("Введите стороны a, b");
         Scanner in = new Scanner(System.in);
         double a=0, b=0;
-        try {
-            a = in.nextDouble();
-            b = in.nextDouble();
-        }
-        catch(InputMismatchException ex) {
-            ex.printStackTrace();
+        boolean flag=true;
+        while (flag)
+        {
+            try {
+                in = new Scanner(System.in);
+                a = in.nextDouble();
+                b = in.nextDouble();
+                flag = false;
+            }
+            catch(InputMismatchException ex) {
+                System.out.println("Неправильно введены аргументы! Попробуйте ещё раз.\n");
+            }
         }
         System.out.println("Площадь: " + a*b + ", периметр: " + (a+b)*2 + "\n");
     }
