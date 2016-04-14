@@ -1,4 +1,4 @@
-package ru.miet.stepanov;
+﻿package ru.miet.stepanov;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
@@ -33,5 +33,4 @@ public class OrtagonalParallelepiped {
     private static double getS(){
         return 2*a*b+2*a*h+2*b*h;
     }
-
 }
