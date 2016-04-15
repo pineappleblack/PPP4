@@ -18,13 +18,20 @@ public class Triangle {
                 a = in.nextDouble();
                 b = in.nextDouble();
                 c = in.nextDouble();
-                flag = false;
+                if ((a+b>c)&&(b+c>a)&&(a+c>b)) flag = false;
+                else
+                {
+                    flag = true;
+                System.out.println("Такого треугольника не существует! Введите данные снова!");
+                }
             }
             catch(InputMismatchException ex) {
                 System.out.println("Неправильно введены аргументы! Попробуйте ещё раз.\n");
             }
         }
-        double p=(a+b+c)/2;
-        System.out.println("Площадь: " + Math.sqrt(Math.abs((p*(p-a)*(p-b)*(p-c)))) + ", периметр: " + 2*p + "\n");
+        if (!flag){
+            double p=(a+b+c)/2;
+            System.out.println("Площадь: " + Math.sqrt((p*(p-a)*(p-b)*(p-c))) + ", периметр: " + 2*p + "\n");
+        }
     }
 }
