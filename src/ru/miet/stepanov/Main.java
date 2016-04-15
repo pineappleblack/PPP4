@@ -7,7 +7,7 @@ public class Main {
     public static void main(String[] args) {
         while(true) {
             System.out.println("Выберите фигуру: \n1 - Прямоугольник\n2 - Треугольник\n" +
-                    "3 - Прямоугольный параллелепипед\n4 -  Призма\n5 - Выйти из программы");
+                    "3 - Прямоугольный параллелепипед\n4 -  Прямоугольная призма (в основании - равносторонний треугольних)\n5 - Выйти из программы");
             Scanner in = new Scanner(System.in);
             int a = in.nextInt();
             switch (a) {
