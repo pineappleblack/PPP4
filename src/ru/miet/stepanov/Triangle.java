@@ -5,12 +5,9 @@ import java.util.Scanner;
 import java.lang.Math;
 
 public class Triangle {
-    public static void go () {
-
-    }
 
     public static void go() {
-        System.out.println("Введите стороны a, b,c");
+        System.out.println("Введите стороны a, b, c");
         Scanner in = new Scanner(System.in);
         double a=0, b=0,c=0;
         boolean flag=true;
@@ -28,6 +25,6 @@ public class Triangle {
             }
         }
         double p=(a+b+c)/2;
-        System.out.println("Площадь: " + Math.sqrt(p*(p-a)*(p-b)*(p-c)) + ", периметр: " + 2*p + "\n");
+        System.out.println("Площадь: " + Math.sqrt(Math.abs((p*(p-a)*(p-b)*(p-c)))) + ", периметр: " + 2*p + "\n");
     }
 }
