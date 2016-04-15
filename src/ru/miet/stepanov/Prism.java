@@ -24,3 +24,4 @@ public class Prizm {
         System.out.println("Площадь: " + (a*3*b) + ", периметр: " + (a*6+b*3) + "\n");
     }
 }
+
